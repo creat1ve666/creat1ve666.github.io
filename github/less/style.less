@@ -1,0 +1,138 @@
+@yelow: #FFB300;
+@light-green: #49BF15;
+* {
+	outline-color: rgba(0,0,0,0);
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.all__btn {
+	background-color: @yelow;
+	text-transform: uppercase;
+	border-radius: 8px;
+	box-shadow: 0 8px 13px rgba(0, 0, 0, 0.04);
+	border: none;
+	color: white;
+}
+
+.header {
+	min-height: 700px;
+	padding: 20px 16.2% 0;
+	background-image: url(../img_2/header__background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	transition-duration: 1s;
+	&__item-1 {
+		height: 70px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		.header__logo {
+			height: 70px;
+			flex: 1;
+		}
+		&__wrap {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			flex: 3;
+			.header__item-1__number {
+				text-align: right;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				p {
+					font-weight: 700;
+					font-size: 20px;
+					margin: 0;
+				}
+			}
+			.header__item-1__btn {
+				margin: 0 0 0 30px;
+				font-size: 12px;
+				width: 225px;
+				height: 50px;
+			}
+		}
+	}
+	&__item-2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 530px;
+		margin: 80px 0 0; 
+		&__wrap-1 {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			h1 {
+				text-transform: uppercase;
+				margin: 0 0 50px;
+				font-size: 40px;
+				font-weight: bold;
+			}
+			.header__item-2__text {
+				font-size: 24px;
+				margin-bottom: 50px;
+			}
+			.header__price {
+				background-color: @light-green;
+				color: white;
+				width: 225px;
+				height: 105px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				p {
+					font-size: 18px;
+					b {
+						font-size: 22px;
+					}
+				}
+			}
+			h3 {
+				font-size: 22px;
+				font-weight: 700;
+				text-transform: uppercase;
+				line-height: 58px;
+			}
+		}
+		&__wrap-2 {
+			background: gray;
+			height: 100%;
+			.header__item-2__form {
+				background: green;
+				text-align: center;
+				width: 355px;
+				height: 410px;
+				padding: 45px 50px;
+				p {
+					font-size: 18px;
+				}
+				input {
+					width: 255px;
+					height: 55px;
+					border-radius: ;
+				}
+				input:first-of-type {
+					margin: 40px 0 25px;
+				}
+				.header__item-2__btn {
+					width: 255px;
+					height: 55px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:1200px) {
+	.header{
+		padding: 20px 10px 0;
+	}
+}
